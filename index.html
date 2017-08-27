@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>canvas-effect</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="control">
+        <div id="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section>
+            <div class="options">Options</div>
+            <div class="shape-box">
+                <span class="circle">Circle</span>
+                <span class="block">Block</span>
+            </div>
+            <p>Text</p>
+            <input type="text" value="(=ﾟωﾟ)ﾉ" id="mes-btn" onchange="change()">
+            <p>Gravity</p>
+            <input type="range" id="gravity" class="common-input" value="0" min="-1" max="1" step="0.1" onchange="changeV()">
+            <p>Cyclicality</p>
+            <input type="range" id="cyclicality" class="common-input" value="0.4" min="0.1" max="0.99" step="0.01" onchange="changeV()">
+            <p>Speed</p>
+            <input type="range" id="speed" class="common-input" value="0.1" min="0" max="5" ste="0.01" onchange="changeV()">
+            <p>Radius</p>
+            <input type="range" id="radius" class="common-input" value="2" min="1.8" max="20" step="0.1" onchange="changeV()">
+            <p>Resolution</p>
+            <input type="range" id="resolution" class="common-input" value="10" min="3" max="20" step="1" onchange="change()">
+        </section>
+    </div>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/shape.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
